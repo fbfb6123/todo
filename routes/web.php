@@ -11,5 +11,4 @@
 |
 */
 
-Route::resource('tasks', 'TaskController');
 Route::get('/folders/{id}/tasks', 'TaskController@index')->name('tasks.index');
