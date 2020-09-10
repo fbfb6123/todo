@@ -18,7 +18,8 @@ class TaskController extends Controller
         $current_folder = Folder::find($id);
 
         //選択されたタスクを取得する
-        $tasks = Task::where('folder_id', $current_folder->id)->get();
+        //$tasks = Task::where('folder_id', $current_folder->id)->get();で取得していたがモデルにhasManyのリレーション関係を定義することによって下記の記述に省略できるようになる
+        $tasks = $current_folder->tasks()->get();
 
         return view('tasks/index', [
             'folders' => $folders,
