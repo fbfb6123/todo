@@ -14,9 +14,21 @@ class Task extends Model
       1 => ['label' => '未着手'],
       2 => ['label' => '着手中'],
       3 => ['label' => '完了'],
-    ]
+    ];
    /**
     * 状態のラベル
     */
 
+    public function getStatusLabelAttribute()
+    {
+      //状態値
+      $status = $this->attributes['status'];
+
+      //定義されていなければ空を返す
+      if (!isset(self::STATUS[$status])) {
+        return '';
+      }
+      return self::STATUS[$status]['label'];
+
+    }
 }
