@@ -21,5 +21,7 @@ class FolderController extends Controller
 
         //インスタンスの状態をデータベースに保存する
         $folder->save();
+
+        return redirect()->route('tasks.index',['id' => $folder->id,])
     }
 }
