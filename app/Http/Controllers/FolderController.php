@@ -10,4 +10,12 @@ class FolderController extends Controller
     {
         return view('folder/create');
     }
+
+    public function create()
+    {
+        //
+        $folder = new Folder();
+    
+
+    }
 }
