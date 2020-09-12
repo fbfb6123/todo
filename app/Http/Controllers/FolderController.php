@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class FolderController extends Controller
 {
-    public
+    public function showCreateForm()
+    {
+        return view('folder/create');
+    }
 }
