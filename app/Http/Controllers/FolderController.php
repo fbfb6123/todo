@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use APP\Folder
+use App\Folder;
 
 class FolderController extends Controller
 {
