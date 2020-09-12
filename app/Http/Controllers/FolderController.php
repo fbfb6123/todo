@@ -19,6 +19,7 @@ class FolderController extends Controller
         //タイトルに入力値を代入する
         $folder->title = $request->title;
 
-        
+        //インスタンスの状態をデータベースに保存する
+        $folder->save();
     }
 }
