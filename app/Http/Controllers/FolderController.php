@@ -13,7 +13,7 @@ class FolderController extends Controller
 
     public function create()
     {
-        //
+        //フォルダモデルのインスタンスを作成する
         $folder = new Folder();
     
 
