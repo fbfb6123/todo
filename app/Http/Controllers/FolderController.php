@@ -16,6 +16,9 @@ class FolderController extends Controller
         //フォルダモデルのインスタンスを作成する
         $folder = new Folder();
     
+        //タイトルに入力値を代入する
+        $folder->title = $request->title;
 
+        
     }
 }
