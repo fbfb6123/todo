@@ -9,7 +9,7 @@ class FolderController extends Controller
 {
     public function showCreateForm()
     {
-        return view('folder/create');
+        return view('folders/create');
     }
 
     public function create()
