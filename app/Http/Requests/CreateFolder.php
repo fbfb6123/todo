@@ -16,6 +16,13 @@ class CreateFolder extends FormRequest
         return true;
     }
 
+    public function attributes()
+    {
+        return [
+            'title' => 'フォルダ名',
+        ];
+    }
+
     /**
      * Get the validation rules that apply to the request.
      *
