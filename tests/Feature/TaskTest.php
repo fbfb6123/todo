@@ -15,7 +15,7 @@ class TaskTest extends TestCase
     /**
      * 各テストメソッドの実行前に呼ばれる
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
