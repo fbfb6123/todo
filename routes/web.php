@@ -17,3 +17,4 @@ Route::post('/folders/create', 'FolderController@create');
 
 Route::get('/folders/{id}/tasks/create', 'TaskController@showCreateForm')->name('tasks.create');
 Route::post('/folders/{id}/tasks/create', 'TaskController@create');
+Route::get('/folders/{id}/tasks/{task_id}/edit', 'TaskControkker@showEditForm')->name('tasks.edit');
