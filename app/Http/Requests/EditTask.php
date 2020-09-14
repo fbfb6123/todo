@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests;
 
+use App\Task;
+
 use Illuminate\Foundation\Http\FormRequest;
 
 class EditTask extends FormRequest
