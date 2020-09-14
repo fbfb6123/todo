@@ -58,6 +58,8 @@ class TaskController extends Controller
     {
         $task = Task::find($task_id);
 
-        
+        $task ->title = $request ->title;
+        $task->status = $request->status;
+        $task ->due_date = $request ->due_date;
     }
 }
