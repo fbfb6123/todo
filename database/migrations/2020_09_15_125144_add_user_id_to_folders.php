@@ -19,7 +19,8 @@ class AddUserIdToFolders extends Migration
 
             // 外部キーを設定する
             $table->foreign('user_id')->references('id')->on('users');
-    }
+    });
+}
 
     /**
      * Reverse the migrations.
