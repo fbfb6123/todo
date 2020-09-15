@@ -14,7 +14,10 @@ class AddUserIdToFolders extends Migration
     public function up()
     {
         Schema::table('folders', function (Blueprint $table) {
-            //
+            
+            $table->integer('use_id')->unsigned();
+
+            $table->
         });
     }
 
