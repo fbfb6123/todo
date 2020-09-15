@@ -15,10 +15,10 @@ class AddUserIdToFolders extends Migration
     {
         Schema::table('folders', function (Blueprint $table) {
             
-            $table->integer('use_id')->unsigned();
+            $table->integer('user_id')->unsigned();
 
-            $table->foreign('use_id')->references('id')->on('users');
-        });
+            // 外部キーを設定する
+            $table->foreign('user_id')->references('id')->on('users');
     }
 
     /**
