@@ -17,7 +17,7 @@ class AddUserIdToFolders extends Migration
             
             $table->integer('use_id')->unsigned();
 
-            $table->
+            $table->foreign('use_id')->references('id')->on('users');
         });
     }
 
