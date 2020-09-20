@@ -14,6 +14,7 @@ class AddUserIdToFolders extends Migration
     public function up()
     {
         Schema::table('folders', function (Blueprint $table) {
+            //外部キー制約を設ける際はカラムの型の互換性を確認
             $table->biginteger('user_id')->unsigned();
 
             // 外部キーを設定する
